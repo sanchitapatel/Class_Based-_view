@@ -34,7 +34,7 @@ class MovieDetail(APIView):
         if serializer.is_valid(): 
             serializer.save() 
             # return Response(serializer.data) 
-            return Response({'msg':"Data updated successfully"})
+            return Response({'msg':"data Updated Successfully"})
         else: return Response(serializer.errors) 
     
     def delete(self,request,pk): 
