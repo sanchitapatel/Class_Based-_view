@@ -40,4 +40,4 @@ class MovieDetail(APIView):
     def delete(self,request,pk): 
         movie=Movie.objects.get(pk=pk) 
         movie.delete() 
-        return Response({'msg':"data deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+        return Response({'msg':"Data Deleted Successfully"}, status=status.HTTP_204_NO_CONTENT)
